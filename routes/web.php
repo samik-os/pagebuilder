@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('page/{page}/editor', 'App\Http\Controllers\PageController@viewEditor');
+Route::get('page/{page}', 'App\Http\Controllers\PageController@viewPage');
