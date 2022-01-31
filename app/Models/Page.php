@@ -11,4 +11,9 @@ class Page extends Model implements Editable
 {
     use HasFactory;
     use EditableTrait;
+
+    public function scopeListable($query)
+    {
+        return $query->where('listable', 1);
+    }
 }

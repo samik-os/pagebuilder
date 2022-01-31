@@ -15,9 +15,10 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('body');
-            $table->text('gjs_data');
+            $table->string('title')->nullable();
+            $table->text('body')->nullable();
+            $table->unsignedTinyInteger('listable')->default(1);
+            $table->text('gjs_data')->nullable();
             $table->timestamps();
         });
     }

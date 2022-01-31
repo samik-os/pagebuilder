@@ -1,0 +1,1 @@
+<a href="{{ url("page/1") }}">Back to List</a>
