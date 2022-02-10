@@ -16,9 +16,8 @@ class PageController extends Controller
         return $this->show_gjs_editor($request, $page);
     }
 
-    public function viewPage(Request $request, $id)
+    public function viewPage(Request $request, Page $page)
     {
-        $page = Page::findOrFail($id);
         return view('page', compact('page'));
     }
 }
