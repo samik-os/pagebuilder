@@ -1,1 +1,1 @@
-<a href="{{ url("page/1") }}">Back to List</a>
+<a href="{{ url("pages/1") }}">Back to List</a>
